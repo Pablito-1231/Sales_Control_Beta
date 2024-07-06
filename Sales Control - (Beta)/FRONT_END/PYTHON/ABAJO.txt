@@ -1,0 +1,146 @@
+1191          F4311 Edit Line
+                 VA frm_JOBS_JobNumber <> BF mnJobNumber
+                 VA frm_CTID_ComputerID <> BF szComputerID
+                 GC Line Number <> BF mnOrderLineNumber
+                 GC ACTN:Action Code (wf) -> BF cDetailActionCode
+                 "1" <> BF cProcessEdits
+                 VA frm_EV01_UsesWorkFields <> BF cUpdateOrWriteWorkFile
+                 GC EV01:Record in Detail W.File (wf) <> BF cRecordWrittenToWorkFile
+                 SL CurrencyProcessing -> BF cCurrencyProcessingFlag
+                 SL VersionName -> BF szPurchaseOrderPrOptVersion
+                 FC Order Company <> BF szOrderCompany
+                 FC Order Number <> BF mnOrderNumber
+                 FC F4301:Order Type <> BF szOrderType
+                 GC Change Order <> BF szOrderSuffix
+                 GC Branch/ Plant <> BF szBranchPlant
+                 GC Orig Co <> BF szOriginalOrderCompany
+                 GC Original Order No <> BF szOriginalOrderNumber
+                 GC Orig Type <> BF szOriginalOrderType
+                 GC Original Line No <> BF mnOriginalLineNumber
+                 VA evt_CompanyKeyRelated -> BF szRelatedOrderCompany
+                 VA evt_RelatedPoSoNumber -> BF szRelatedOrderNumber
+                 VA evt_RelatedOrderType -> BF szRelatedOrderType
+                 VA evt_RelatedPoSoLineNo -> BF mnRelatedOrderLine
+                 FC Address Number <> BF mnSupplierNumber
+                 GC Ship To Number <> BF mnShipToNumber
+                 GC Request Date <> BF jdRequestedDate
+                 VA frm_jdPriceEffectiveDate_PEFJ <> BF jdTransactionDate
+                 GC Promised Delivery <> BF jdPromisedDate
+                 GC Cancel Date <> BF jdCancelDate
+                 GC G/L Date <> BF jdGLDate
+                 GC Item Number <> BF szUnformattedItemNumber
+                 GC Quantity Ordered <> BF mnQuantityOrdered
+                 GC Unit Cost <> BF mnUnitPrice
+                 VA grd_PS09StatusFlag_PROV <> BF cPriceOverrideFlag
+                 GC Extended Cost <> BF mnExtendedPrice
+                 GC Ln Ty <> BF szLineType
+                 GC Description 1 <> BF szDescription1
+                 GC Description 2 <> BF szDescription2
+                 VA evt_szAssetItemNumber_ASID <> BF szAssetID
+                 GC Branch/ Plant <> BF szDetailLineBranchPlant
+                 GC Location <> BF szLocation
+                 GC Lot/Serial <> BF szLotNumber
+                 VA grd_TempTransactionUOM_TRUM <> BF szTransactionUoM
+                 GC Pu. UoM <> BF szPurchasingUoM
+                 GC Last Status <> BF szLastStatus
+                 GC Next Status <> BF szNextStatus
+                 GC Account Number <> BF szUnformattedAccountNumber
+                 GC Subledger <> BF szSubledger
+                 GC Sub Type <> BF cSubledgerType
+                 GC Discount Factor <> BF mnDiscountFactor
+                 GC CATN:Catalog Number(wf) <> BF szCatalogNumber
+                 GC Item Price Group <> BF szInventoryPriceRule
+                 GC Price Cat Level <> BF szPriceLevel
+                 GC Print Message <> BF szPrintMessage
+                 GC Tax Y/N <> BF cTaxable
+                 GC Expl Code <> BF szTaxExplanationCode
+                 GC Tax Rate/Area <> BF szTaxRateArea
+                 GC G/L Offset <> BF szGLClassCode
+                 GC Buyer Number <> BF mnBuyerNumber
+                 GC Carrier Number <> BF mnCarrierNumber
+                 GC Report Code 1 <> BF szPurchasingCategoryCode1
+                 GC Report Code 2 <> BF szPurchasingCategoryCode2
+                 GC Report Code 3 <> BF szPurchasingCategoryCode3
+                 GC Report Code 4 <> BF szPurchasingCategoryCode4
+                 GC Cost Rule <> BF szLandedCostRule
+                 GC Extended Weight <> BF mnWeight
+                 VA grd_TempWeightUOM_WTUM <> BF szWeightUoM
+                 GC Extended Volume <> BF mnVolume
+                 VA grd_TempVolumeUOM_VLUM <> BF szVolumeUoM
+                 GC Reference <> BF szReference1
+                 GC Reference <> BF szReference2
+                 GC S M <> BF cSendMethod
+                 GC F C <> BF cFreezeCode
+                 GC E R <> BF cEvaluatedReceipts
+                 VA grd_cInventoryInterface_IVI <> BF cInventoryInterface
+                 FC Foreign <> BF cCurrencyMode
+                 FC Currency Code <> BF szTransactionCurrencyCode
+                 FC ExchangeRate_CRR <> BF mnCurrencyExchangeRate
+                 FC To Currency Code <> BF szBaseCurrencyCode
+                 GC Get Blanket <> BF cRelievePOBlanketOrder
+                 VA frm_EV01_AddNewToExistingOrder <> BF cAddNewLineToExistingOrder
+                 <Zero> <> BF cSourceRequestingPOGeneration
+                 "EP4310" <> BF szProgramID
+                 VA frm_USR0_UserID <> BF szUserID
+                 GC EV07..BlanketOrdersFound(wf) <- BF cMultipleBlanketProcessing
+                 GC Unique Key ID -> BF mnUniqueKey
+                 GC Pymt Terms <> BF szPaymentTerms
+                 GC Freight HandlingCode <> BF szFreightHandlingCode
+                 GC Agreement Number <> BF szAgreementNumber
+                 GC Agreement Supplement <> BF mnAgreementSupplement
+                 GC Agreements Found <> BF mnContractsFound
+                 GC Disply Seq <> BF mnSequenceNumber1
+                 GC Product Source <> BF szProductSource
+                 GC Sr Ty <> BF szProductSourceType
+                 GC Price Effective <> BF jdEffectiveDate
+                 GC Actual Ship Date <> BF jdPhysicalCompletionDate
+                 GC Cost Center <> BF szPurchasingCostCenter
+                 GC Obj Acct <> BF szObjectAccount
+                 GC Sub <> BF szSubsidiary
+                 VA evt_OrderSuffix_SFXO <> BF szOriginalOrderSuffix
+                 VA grd_StockingType_STKT <> BF cStockingType
+                 VA frm_PMTH_MethodofPriceCalc <> BF cKitsMethodofPriceCalculation
+                 GC Related Item No -> BF szItemNumberRelatedKit
+                 VA grd_ASN_AdjSchedule <> BF szAdjustmentSchedule
+                 VA grd_AREV_AdjRevisionLevel <> BF mnAdjustmentRevisionLevel
+                 VA grd_PS08_cFreeGoodIndicator -> BF cFreeGoodIndicator
+                 VA grd_FreeGoodExists_EV01 <> BF cAdvPriceCalledFlag
+                 GC Cost Object Type 1 <> BF cManagerialAnalysisType1
+                 GC Cost Object 1 <> BF szManagerialAnalysisCode1
+                 GC Cost Object Type 2 <> BF cManagerialAnalysisType2
+                 GC Cost Object 2 <> BF szManagerialAnalysisCode2
+                 GC Cost Object Type 3 <> BF cManagerialAnalysisType3
+                 GC Cost Object 3 <> BF szManagerialAnalysisCode3
+                 GC Cost Object Type 4 <> BF cManagerialAnalysisType4
+                 GC Cost Object 4 <> BF szManagerialAnalysisCode4
+                 GC Shipment Number <> BF mnShipmentNumber
+                 VA frm_mnProcessID_PEID <> BF mnProcessID
+                 VA frm_mnTransactionID_TCID <> BF mnTransactionID
+                 GC It Mg <- BF szItemFlashMessage
+                 GC Short Item No <> BF mnIdentifierShortItem
+                 "" X  BF mnRMADocNumber
+                 "" X  BF szRMADocType
+                 GC Sec Quantity Ordered <> BF mnSecondaryQty
+                 GC Sec UoM <> BF szSecondaryUOM
+                 GC Planned Effective <> BF jdLotEffectivityDate
+                 GC Promotion ID <> BF szPromotionID
+                 GC Matrix Line Number -> BF mnMatrixControlLine
+                 GC Project Number -> BF mnProjectNumber
+                 VA evt_szPOEMBFInternalFlags_POEF -> BF szPOEMBFInternalFlags
+                 GC Mod Trn -> BF szModeOfTransport
+                 FI mnTaskOrderNumber -> BF mnTaskOrderNumber
+                 FI szTaskOrderType -> BF szTaskOrderType
+                 VA grd_cPreservePOEManualAdj_EV01 -> BF cPreservePOEManualAdj
+                 GC POE Trigger Reprice -> BF cPOETriggerReprice
+                 GC Multiple Accounts -> BF cMultipleAccountsExist_MACT
+                 VA grd_cManualOverride_MOADJ <> BF cManualOverride
+                 GC Category Code 01 <> BF szPurchaseLineCode01
+                 GC Category Code 02 <> BF szPurchaseLineCode02
+                 GC Category Code 03 <> BF szPurchaseLineCode03
+                 GC Category Code 04 <> BF szPurchaseLineCode04
+                 GC Job Typ <> BF szJobType
+                 GC Service Quantity -> BF mnUnitsQuantityService
+                 GC Service UoM <> BF szUnitOfMeasureService
+                 BC Indicador de creación por configurador (F4311)(CFGFL) -> BF cCreatedByConfiguratorFlag
+                 GC Production Number <> BF szProjectMfgProductionNumb
+                 GC Production Number Short <> BF mnProductionNumberShort

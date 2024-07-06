@@ -1,0 +1,182 @@
+
+
+/*Propiedades para body*/
+body {
+
+	background-image: url("./fondo_azul.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size:cover;
+	overflow:hidden;
+}
+
+/*Propiedades para titulos*/
+.box-titulo {
+
+	width: auto;
+	height: auto;
+	margin:  auto;
+	padding: 20px;
+	background: #73e20b;
+	overflow: auto;
+	font-family: Arial, Helvetica, sans-serif;
+	border-radius: 0px;
+
+}
+
+/*Propiedades para inicio de sesión*/
+.box-login {
+
+	background:#2271b283;
+
+	width: 30%;
+	height: 80%;
+	position: fixed;
+	left: 80%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+	color: #000000;
+	font-size: 50px;
+
+	border-style:inherit;
+	border-color: #000000;
+	border-radius: 4%;
+	overflow:hidden;
+}
+
+/*Propiedades para logos en login*/
+.logo_login {
+
+	width: 20%;
+	height: 10%;
+
+	position: fixed;
+	left: 30%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size:contain;
+
+}
+
+/*Propiedades para logos en login sales control*/
+.logo_login_Sales {
+
+	width: auto;
+	height: auto;
+
+	position:absolute;
+	left: 50%;
+	top: 45%;
+	transform: translate(-50%, -50%);
+
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size:contain;
+
+}
+
+
+.contenedor {
+
+	width: 500px;
+	height: 500px;
+	margin: 50px auto;
+	padding: 20px;
+	background: #cc00ff;
+	overflow: auto;
+	font-family: Arial, Helvetica, sans-serif;
+	border-radius: 0%;
+}
+
+.contenedor h1 {
+
+	font-size: 38px;
+	font-weight: 600;
+	color: #ffffff;
+}
+
+.contenedor hr {
+
+	background: #ff9d00;
+	width: 20%;
+	height: 5px;
+	border: none;
+	margin: 20px 0;
+	border-radius: 50px;
+}
+
+p {
+	position: absolute;
+	left: 30%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	
+	margin-bottom: 20px;
+	line-height: 28px;
+	font-size: 65px;
+	color: #000000;
+}
+
+/*******************************************************************************************************/
+
+
+/* Scroll contendor */
+.contenedor::-webkit-scrollbar {
+
+	width: 7px;
+	border-radius: 5px;
+}
+
+.contenedor::-webkit-scrollbar-thumb {
+
+	background: #ff9d00;
+	border-radius: 5px;
+}
+
+/* Scroll box titulo */
+.box-titulo::-webkit-scrollbar {
+
+	width: 7px;
+	border-radius: 5px;
+}
+
+.box-titulo::-webkit-scrollbar-thumb {
+
+	background: #ff9d00;
+	border-radius: 5px;
+}
+
+/* Scroll box login */
+.box-login::-webkit-scrollbar {
+
+	width: 7px;
+	border-radius: 20px;
+;
+
+}
+
+.box-login::-webkit-scrollbar-thumb {
+
+	background: #ff9d00;
+	border-radius: 20px;
+}
+
+/* Scroll body
+.body::-webkit-scrollbar {
+
+	background:rgb(117, 235, 235);
+	width: 2px;
+	border-radius: 0%;
+
+}
+
+.body::-webkit-scrollbar-thumb {
+
+	background:#48928e80;
+	border-radius: 8px;
+}*/
