@@ -27,12 +27,12 @@ body {
 /*Propiedades para inicio de sesión*/
 .box-login {
 
-	background:#2271b283;
+	background:#ffffff;
 
 	width: 30%;
-	height: 80%;
+	height: 100%;
 	position: fixed;
-	left: 80%;
+	left: 75%;
 	top: 50%;
 	transform: translate(-50%, -50%);
 
@@ -40,22 +40,24 @@ body {
 	color: #000000;
 	font-size: 50px;
 
-	border-style:inherit;
-	border-color: #000000;
-	border-radius: 4%;
+	border-style:outset;
+	border-color: #2271b28e;
+	border-radius: 0%;
 	overflow:hidden;
 }
 
 /*Propiedades para logos en login*/
 .logo_login {
 
-	width: 20%;
-	height: 10%;
+	width: 150px;
+	height: 35px;
 
 	position: fixed;
-	left: 30%;
-	top: 50%;
+	left:4.5%;
+	top: 3%;
 	transform: translate(-50%, -50%);
+	padding: 4px;
+	border-radius: 8%;
 
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -71,9 +73,10 @@ body {
 
 	position:absolute;
 	left: 50%;
-	top: 45%;
+	top: 47%;
 	transform: translate(-50%, -50%);
-
+	
+	background-color: #000000;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size:contain;

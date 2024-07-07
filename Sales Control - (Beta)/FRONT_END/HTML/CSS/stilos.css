@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+
+body {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    background-image: url("./fondo_azul.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-size:cover;
+
+}
+
+.Box_Login {
+
+    width: 450px;
+    border-radius: 10px;
+    border: 2px solid #1654d977;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+    background-color:#1654d91a;
+    color: #ffff;
+    padding: 30px 40px;
+
+
+}
+
+.Box_Login h1 {
+
+    font-size: 40px;
+    text-align: center;
+
+}
+
+.Box_Login .Box_User {
+
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin: 25px 0;
+
+}
+
+.Box_Login .Box_Passw {
+
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin: 25px 0;
+
+}
+
+.Box_User input {
+
+    height: 100%;
+    width: 100%;
+
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+
+    font-size: medium;
+    color: #ffff;
+
+    padding: 20px 45px 20px 20px;
+
+}
+
+.Box_Passw input {
+
+    height: 100%;
+    width: 100%;
+
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+
+    font-size: medium;
+    color: #ffff;
+
+    padding: 20px 45px 20px 20px;
+}
+
+.Box_User input::placeholder {
+
+    color: #ffffff;
+
+}
+
+.Box_Passw input::placeholder {
+
+    color: #ffffff;
+
+}
+
+
+.Box_User i {
+
+    position: absolute;
+    right: 5%;
+    top: 45%;
+    transform: translateY(-50%);
+
+}
+
+.Box_Passw i {
+
+    position: absolute;
+    right: 5%;
+    top: 53.3%;
+    transform: translateY(-50%);
+
+}
+
+.Box_Login .Recuerda_Passw {
+
+    display: flex;
+    justify-content: space-between;
+    font-size:small;
+    margin: -15px 0 15px;
+
+}
+
+.Recuerda_Passw label input {
+
+    accent-color: white;
+    margin-right: 3px;
+
+}
+
+.Recuerda_Passw a {
+
+    text-decoration: none;
+}
+
+.Recuerda_Passw a:hover {
+
+    text-decoration: underline;
+
+}
+
+.Box_Login .Botón {
+
+    height: 40px;
+    width: 100%;
+
+    background-color: #ffff;
+    
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: medium;
+    color: #000000;
+    font-weight: 600;
+
+}
+
+.Box_Login .Link_Registro {
+
+    font-size: medium;
+    text-align: center;
+    margin-top: 30px;
+
+}
