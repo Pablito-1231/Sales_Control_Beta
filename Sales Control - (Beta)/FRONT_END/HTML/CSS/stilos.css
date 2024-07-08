@@ -23,15 +23,37 @@ body {
 
 }
 
+/***************************************************************/
+
+.Powered {
+    
+    position:fixed;
+    display:flex;
+    width: auto;
+    height: auto;
+
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 20px;
+    font-weight: 500;
+    color: #0237f880;
+
+}
+
+/************************* BOX LOGIN ***************************/
+
 .Box_Login {
 
-    width: 450px;
-    border-radius: 10px;
-    border: 2px solid #1654d977;
-    backdrop-filter: blur(20px);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 500px;
+    height: 450px;
+    border-radius: 30px;
+    border: 2px solid #ffffff;
+    backdrop-filter: blur(1px);
+    box-shadow: 0 0 10px #1654d9;
 
-    background-color:#1654d91a;
+    background-color:#1654d925;
     color: #ffff;
     padding: 30px 40px;
 
@@ -43,6 +65,14 @@ body {
     text-align: center;
 
 }
+
+.Box_Form {
+
+    text-align: center;
+
+}
+
+/************************* BOX *********************************/
 
 .Box_Login .Box_User {
 
@@ -72,9 +102,10 @@ body {
     outline: none;
 
     border: 2px solid #ffffff;
-    border-radius: 10px;
+    border-radius: 30px;
 
     font-size: medium;
+    font-weight: 600;
     color: #ffff;
 
     padding: 20px 45px 20px 20px;
@@ -91,9 +122,10 @@ body {
     outline: none;
 
     border: 2px solid #ffffff;
-    border-radius: 10px;
+    border-radius: 30px;
 
     font-size: medium;
+    font-weight: 600;
     color: #ffff;
 
     padding: 20px 45px 20px 20px;
@@ -110,7 +142,6 @@ body {
     color: #ffffff;
 
 }
-
 
 .Box_User i {
 
@@ -130,19 +161,30 @@ body {
 
 }
 
+/********************* RECUERDA PASSWORD ************************/
+
 .Box_Login .Recuerda_Passw {
 
     display: flex;
     justify-content: space-between;
-    font-size:small;
+    font-size: 13px;
+    font-weight:bold;
     margin: -15px 0 15px;
 
+}
+
+.Recuerda_Passw label {
+    
+    display: flex;
+    padding-left: 4px;
+    cursor: pointer;
 }
 
 .Recuerda_Passw label input {
 
     accent-color: white;
-    margin-right: 3px;
+    margin-right: 5px;
+    cursor: pointer;
 
 }
 
@@ -157,17 +199,20 @@ body {
 
 }
 
+/************************* BOTON *********************************/
+
 .Box_Login .Botón {
 
     height: 40px;
     width: 100%;
+    margin-top: 10%;
 
     background-color: #ffff;
     
     border: none;
-    border-radius: 10px;
+    border-radius: 30px;
     outline: none;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    box-shadow: 0 0 10px #1654d9af;
     cursor: pointer;
     font-size: medium;
     color: #000000;
@@ -175,10 +220,38 @@ body {
 
 }
 
+/********************* LINK REGISTRO *****************************/
+
 .Box_Login .Link_Registro {
 
     font-size: medium;
+    font-weight:bold;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 15px;
+
+}
+
+.Link_Registro a {
+
+    text-decoration: none;
+
+}
+
+.Link_Registro a:hover {
+
+    text-decoration: underline;
+
+}
+
+/******************************************************************/
+
+.Leyenda {
+
+    margin-top: 15%;
+
+    color: #000000;
+    font-weight: bold;
+    font-size: small;
+
 
 }
