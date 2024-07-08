@@ -16,10 +16,11 @@ body {
     align-items: center;
     min-height: 100vh;
 
-    /*background-image: url("./fondo_azul.jpg");*/
+    background-attachment:fixed;
+    background-position: center;
+    background-size:cover;
+    background-image: url("./fondo_vector_4k.jpg");
     background-repeat: no-repeat;
-    background-attachment: fixed;
-	background-size:cover;
 
 }
 
@@ -34,11 +35,12 @@ body {
 
     top: 90%;
     left: 50%;
+    margin: 1%;
     transform: translate(-50%, -50%);
 
     font-size: 20px;
     font-weight: 500;
-    color: #0237f880;
+    color: #000000;
 
 }
 
@@ -50,10 +52,10 @@ body {
     height: 450px;
     border-radius: 30px;
     border: 2px solid #ffffff;
-    backdrop-filter: blur(1px);
-    box-shadow: 0 0 10px #1654d9;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px #4c86df;
 
-    background-color:#1654d925;
+    background-color: #ffffff21;
     color: #ffff;
     padding: 30px 40px;
 
@@ -63,6 +65,7 @@ body {
 
     font-size: 40px;
     text-align: center;
+    color: #4c86df;
 
 }
 
@@ -97,7 +100,7 @@ body {
     height: 100%;
     width: 100%;
 
-    background-color: transparent;
+    background-color: #4c87df69;
     border: none;
     outline: none;
 
@@ -117,7 +120,7 @@ body {
     height: 100%;
     width: 100%;
 
-    background-color: transparent;
+    background-color: #4c87df69;
     border: none;
     outline: none;
 
@@ -178,6 +181,8 @@ body {
     display: flex;
     padding-left: 4px;
     cursor: pointer;
+    font-style: italic;
+    font-weight: normal;
 }
 
 .Recuerda_Passw label input {
@@ -191,6 +196,7 @@ body {
 .Recuerda_Passw a {
 
     text-decoration: none;
+    color: #000000;
 }
 
 .Recuerda_Passw a:hover {
@@ -212,7 +218,7 @@ body {
     border: none;
     border-radius: 30px;
     outline: none;
-    box-shadow: 0 0 10px #1654d9af;
+    box-shadow: 0 0 10px #4c86df;
     cursor: pointer;
     font-size: medium;
     color: #000000;
@@ -225,15 +231,17 @@ body {
 .Box_Login .Link_Registro {
 
     font-size: medium;
-    font-weight:bold;
     text-align: center;
     margin-top: 15px;
+    color: #000000;
 
 }
 
 .Link_Registro a {
 
     text-decoration: none;
+    font-weight:bold;
+    color: #E2446E;
 
 }
 
