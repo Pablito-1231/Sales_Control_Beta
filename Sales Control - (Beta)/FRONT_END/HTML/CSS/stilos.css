@@ -16,7 +16,7 @@ body {
     align-items: center;
     min-height: 100vh;
 
-    background-image: url("./fondo_azul.jpg");
+    /*background-image: url("./fondo_azul.jpg");*/
     background-repeat: no-repeat;
     background-attachment: fixed;
 	background-size:cover;
