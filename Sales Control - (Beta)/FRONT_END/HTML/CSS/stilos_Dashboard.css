@@ -83,20 +83,16 @@
 
 .contenedor_Cierra_Sesión {
 
-    height: 100%;
-    width: 10%;
-
     align-content: center;
     background-color: transparent;
     border: 1px solid #000000;
 
 }
 
-.Cierra_Sesión {
+/* .Cierra_Sesión {
 
-    position:;
-    left:25%;
-
+    left:100%;
+    margin: 10px 10px;
 
     width: fit-content;
     height: 30px;
@@ -110,7 +106,7 @@
     color: #000000;
     cursor: pointer;
 
-}
+} */
 
 .Bar_Menu {
 
