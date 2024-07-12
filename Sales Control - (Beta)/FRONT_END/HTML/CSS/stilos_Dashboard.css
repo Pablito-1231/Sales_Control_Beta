@@ -21,7 +21,7 @@
     background-attachment:fixed;
     background-position: center;
     background-size:cover;
-    background-image: url("./FONDOS/tema_idepad.jpg");
+    background-image: url("./FONDOS/tema_dark_blue.jpg");
     background-repeat: no-repeat;
     /* temp */
 
@@ -29,46 +29,44 @@
 
 .body::-webkit-scrollbar {
 
-    width: 8px;
+    width: 4px;
 	border-radius: 0px;
-    background-color: gainsboro;
+
 }
 
 .body::-webkit-scrollbar-thumb {
 
-    background: #0c2b27b4;
-	border-radius: 4px;
+    background: #4eccbbb4;
+	border-radius: 0px;
 }
 
 .Dash {
 
     display: flex;
-    position: relative;
-
     width: 100%;
-    height: 60px;
+    height: 80px;
 
     border: 0px solid #000000;
-    padding: 0px 10px;
+    padding: 0px 10px 0px 10px;
 
-    backdrop-filter: blur(0px);
+    backdrop-filter: blur(50px);
     box-shadow: 0 0 20px #000000;
 
-    /* background-color: #4c87df69; */
-    background-color: #ff0000af;
+    background-color: transparent;
+    /* background-color: #ff0000af; */
     justify-content: space-between;
 }
 
 .Logo_Inicio {
 
     height: 100%;
-    width: 400px;
+    width: 500px;
     border: 0px solid black;
 
     background-color: transparent;
     align-content: center;
-    text-align: center;
-    cursor: pointer;
+    text-align: left;
+    overflow: hidden;
 
 }
 
@@ -77,22 +75,23 @@
     height: 100%;
     width: fit-content;
     border: 0px solid black;
-
+    
     text-decoration: none;
     font-weight: bold;
-    font-size: 30px;
-    color: white;
+    font-size: 40px;
+    color: #ffffff;
 
 }
 
 .space {
-
+    
     width:100%;
     border: 0px solid #000000;
 
     align-content: center;
     text-align: center;
-    color: white;
+    color: #ffffff;
+    overflow: hidden;
     
 
 }
@@ -106,47 +105,111 @@
 
 .Cierra_Sesión {
 
-    width: 120px;
-    height: 60%;
+    width: 90px;
+    height: 40%;
     
     border: 0px solid #000000;
-    border-radius: 40px;
-    background-color: #0eeb50;
-    /* box-shadow: 0 0 10px #000000; */
+    border-radius: 4px;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px #000000;
 
-    font-size:smaller;
-    font-weight: bold;
+    font-size: medium;
+    font-weight: 600;
     color: #000000;
+
     cursor: pointer;
+}
+
+.Cierra_Sesión:hover {
+
+    box-shadow: 0 0 10px #ffffff;
+    background-color: #ffffff52;
+    border: none;
+    color: #ffffff;
+
 
 }
 
 .slider_Menu {
 
-    position: absolute;
     width: 100%;
-    height: 4%;
-
-    border: 0px solid #ffffff;
+    height: 50px;
     padding: 0px 10px;
 
-    backdrop-filter: blur(5px);
-    box-shadow: 0 0 10px #000000;
-    background-color: #ffffff;
-
-    text-align: center;
+    backdrop-filter: blur(20px);
+    background-color: #ffffff52;
+    /* box-shadow: 0 0 5px #000000; */
+    
+    /* text-align: center;
     align-content: center;
+    overflow: hidden; */
 
 }
 
-/* .slider_Menu::-webkit-scrollbar {
+.Modulos {
 
-    width: 7px;
-	border-radius: 5px;
+    max-height: 100%;
+    max-width: fit-content;
+
+    border: 0px solid rgb(255, 255, 255);
+    margin: auto;
+
+    font-size: small;
+    justify-content: center;
+
 }
 
-.slider_Menu::-webkit-scrollbar-thumb {
+nav {
 
-	background: #ff9d00;
-	border-radius: 5px;
-} */
+    height: 100%;
+    width: fit-content;
+
+}
+
+nav > ul > li > a > i {
+
+    font-size: large;
+
+}
+
+nav > ul {
+    
+    display: flex;
+    height: 100%;
+
+}
+
+nav > ul > li {
+
+    position: relative;
+
+    height: 100%;
+    list-style: none;
+
+}
+
+nav > ul > li > a {
+
+    display: flex;
+
+    width: 100%;
+    height: 100%;
+    padding: 14px;
+
+    align-items: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 300ms ease;
+
+    color: #ffffff;
+
+}
+
+nav > ul > li > a:hover {
+
+    transform: scale(1.1);
+    background-color: #ffffffe1;
+    box-shadow: 0 0 10px #000000;
+    color: #000000;
+
+}
