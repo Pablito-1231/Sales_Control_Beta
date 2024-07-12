@@ -19,7 +19,7 @@ body {
     background-attachment:fixed;
     background-position: center;
     background-size:cover;
-    background-image: url("./fondo_vector_4k.jpg");
+    background-image: url("./FONDOS/tema_dark_blue.jpg");
     background-repeat: no-repeat;
 
 }
@@ -40,7 +40,7 @@ body {
 
     font-size: 20px;
     font-weight: 500;
-    color: #000000;
+    color: #ffffff;
 
 }
 
@@ -65,7 +65,8 @@ body {
 
     font-size: 40px;
     text-align: center;
-    color: #4c86df;
+    /* color: #4c86df; */
+    color: #ffffff;
 
 }
 
@@ -196,7 +197,7 @@ body {
 .Recuerda_Passw a {
 
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
 }
 
 .Recuerda_Passw a:hover {
@@ -233,7 +234,7 @@ body {
     font-size: medium;
     text-align: center;
     margin-top: 15px;
-    color: #000000;
+    color: #ffffff;
 
 }
 
@@ -241,7 +242,8 @@ body {
 
     text-decoration: none;
     font-weight:bold;
-    color: #E2446E;
+    /* color: #E2446E; */
+    color: #ffffff;
 
 }
 
